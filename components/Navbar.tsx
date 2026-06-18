@@ -13,14 +13,14 @@ export default function Navbar() {
         alignItems: "center",
       }}
     >
-      <div
+      <img
+        src="/logo.png"
+        alt="VacationWeb"
         style={{
-          fontSize: "1.5rem",
-          fontWeight: 700,
+          height: "60px",
+          width: "auto",
         }}
-      >
-        VacationWeb
-      </div>
+      />
 
       <button
         style={{
@@ -28,6 +28,8 @@ export default function Navbar() {
           borderRadius: "999px",
           border: "none",
           cursor: "pointer",
+          background: "white",
+          fontWeight: 600,
         }}
       >
         Blijf op de hoogte
