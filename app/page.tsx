@@ -12,7 +12,7 @@ export default function HomePage() {
           style={{
             minHeight: "100vh",
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')",
+              "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             position: "relative",
@@ -25,7 +25,7 @@ export default function HomePage() {
               position: "absolute",
               inset: 0,
               background:
-                "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35))",
+                "linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40))",
             }}
           />
 
@@ -68,6 +68,7 @@ export default function HomePage() {
                 fontSize: "1.3rem",
                 lineHeight: 1.7,
                 marginBottom: "2rem",
+                maxWidth: "650px",
               }}
             >
               Vergelijk vakanties van zorgvuldig geselecteerde reispartners
@@ -113,18 +114,33 @@ export default function HomePage() {
 
         <section
           style={{
-            padding: "100px 10%",
+            padding: "120px 10%",
             background: "white",
+            textAlign: "center",
           }}
         >
+          <div
+            style={{
+              color: "#0ea5e9",
+              fontSize: "0.85rem",
+              fontWeight: 700,
+              letterSpacing: "2px",
+              textTransform: "uppercase",
+              marginBottom: "12px",
+            }}
+          >
+            Waarom VacationWeb?
+          </div>
+
           <h2
             style={{
               fontSize: "3rem",
-              marginBottom: "60px",
-              textAlign: "center",
+              marginBottom: "70px",
             }}
           >
-            Waarom zoeken via VacationWeb?
+            Eén zoekopdracht.
+            <br />
+            Meerdere reispartners.
           </h2>
 
           <div
@@ -132,43 +148,43 @@ export default function HomePage() {
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
               gap: "40px",
+              maxWidth: "1100px",
+              margin: "0 auto",
             }}
           >
             <div
               style={{
-                padding: "40px",
-                borderRadius: "20px",
                 background: "#f8fafc",
+                padding: "40px",
+                borderRadius: "24px",
+                textAlign: "left",
               }}
             >
-              <h3 style={{ marginBottom: "20px" }}>
+              <h3 style={{ marginBottom: "25px" }}>
                 Traditionele reiswebsites
               </h3>
 
-              <ul style={{ lineHeight: "2" }}>
-                <li>Zoekopdracht invoeren</li>
-                <li>Zoek bij reispartner A</li>
-                <li>Herhaal bij reispartner B</li>
-                <li>Herhaal bij reispartner C</li>
-                <li>Vergelijk alles zelf</li>
-              </ul>
+              <p>• Zoekopdracht invoeren</p>
+              <p>• Zoek bij reispartner A</p>
+              <p>• Herhaal bij reispartner B</p>
+              <p>• Herhaal bij reispartner C</p>
+              <p>• Vergelijk alles zelf</p>
             </div>
 
             <div
               style={{
-                padding: "40px",
-                borderRadius: "20px",
                 background: "#e0f2fe",
+                padding: "40px",
+                borderRadius: "24px",
+                textAlign: "left",
               }}
             >
-              <h3 style={{ marginBottom: "20px" }}>VacationWeb</h3>
+              <h3 style={{ marginBottom: "25px" }}>VacationWeb</h3>
 
-              <ul style={{ lineHeight: "2" }}>
-                <li>Geef één keer je voorkeuren in</li>
-                <li>Wij vergelijken meerdere reispartners</li>
-                <li>Ontdek waar jouw budget het meeste oplevert</li>
-                <li>Alles in één overzicht</li>
-              </ul>
+              <p>• Geef één keer je voorkeuren in</p>
+              <p>• Vergelijk meerdere reispartners tegelijk</p>
+              <p>• Ontdek waar jouw budget het meeste oplevert</p>
+              <p>• Alles in één overzicht</p>
             </div>
           </div>
         </section>
@@ -177,64 +193,132 @@ export default function HomePage() {
 
         <section
           style={{
-            padding: "100px 10%",
-            background: "#f8fafc",
+            padding: "120px 10%",
+            background: "#f8fbfd",
+            textAlign: "center",
           }}
         >
-          <h2
+          <div
             style={{
-              fontSize: "3rem",
-              marginBottom: "50px",
-              textAlign: "center",
+              color: "#0ea5e9",
+              fontSize: "0.85rem",
+              fontWeight: 700,
+              letterSpacing: "2px",
+              textTransform: "uppercase",
+              marginBottom: "12px",
             }}
           >
             Voorbeeldscenario
+          </div>
+
+          <h2
+            style={{
+              fontSize: "3rem",
+              marginBottom: "60px",
+            }}
+          >
+            Meer vakantie voor hetzelfde budget
           </h2>
 
           <div
             style={{
-              maxWidth: "900px",
-              margin: "0 auto",
-              background: "white",
-              padding: "50px",
-              borderRadius: "24px",
+              display: "flex",
+              justifyContent: "center",
+              gap: "24px",
+              flexWrap: "wrap",
             }}
           >
-            <p>
-              <strong>Budget:</strong> €2.000
-            </p>
+            <div
+              style={{
+                width: "300px",
+                background: "white",
+                borderRadius: "24px",
+                overflow: "hidden",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+              }}
+            >
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                style={{ width: "100%", height: "220px", objectFit: "cover" }}
+              />
+              <div style={{ padding: "20px" }}>
+                <strong>Mallorca</strong>
+                <p>6 dagen</p>
+              </div>
+            </div>
 
-            <p>
-              <strong>Periode:</strong> tussen 10 juli en 20 augustus
-            </p>
+            <div
+              style={{
+                width: "300px",
+                background: "white",
+                borderRadius: "24px",
+                overflow: "hidden",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+              }}
+            >
+              <img
+                src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff"
+                style={{ width: "100%", height: "220px", objectFit: "cover" }}
+              />
+              <div style={{ padding: "20px" }}>
+                <strong>Griekenland</strong>
+                <p>8 dagen</p>
+              </div>
+            </div>
 
-            <p>
-              <strong>Voorkeuren:</strong> Strandvakantie • 4 sterren • All
-              Inclusive
-            </p>
-
-            <hr style={{ margin: "30px 0" }} />
-
-            <p>🇪🇸 Spanje → 7 dagen</p>
-            <p>🇬🇷 Griekenland → 8 dagen</p>
-            <p>🇧🇬 Bulgarije → 10 dagen</p>
-            <p>🇹🇷 Turkije → 11 dagen</p>
+            <div
+              style={{
+                width: "300px",
+                background: "white",
+                borderRadius: "24px",
+                overflow: "hidden",
+                border: "3px solid #0ea5e9",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+              }}
+            >
+              <img
+                src="https://images.unsplash.com/photo-1519046904884-53103b34b206"
+                style={{ width: "100%", height: "220px", objectFit: "cover" }}
+              />
+              <div style={{ padding: "20px" }}>
+                <strong>Turkije</strong>
+                <p>10 dagen</p>
+              </div>
+            </div>
           </div>
-        </section>
 
-        {/* FOOTER */}
+          <p
+            style={{
+              marginTop: "25px",
+              fontWeight: 600,
+            }}
+          >
+            Budget €1.000 per persoon • Flexibel tussen 10 juli en 20 augustus
+          </p>
+
+          <p
+            style={{
+              marginTop: "15px",
+              color: "#64748b",
+              fontSize: "0.9rem",
+            }}
+          >
+            Illustratief voorbeeld. Werkelijke prijzen, beschikbaarheid en
+            reisduur verschillen per periode en aanbieder.
+          </p>
+        </section>
 
         <footer
           style={{
-            padding: "60px 10%",
             background: "#0f172a",
             color: "white",
+            padding: "60px",
             textAlign: "center",
           }}
         >
-          <h3 style={{ marginBottom: "20px" }}>VacationWeb</h3>
+          <h3>VacationWeb</h3>
 
-          <p>info@vacationweb.be</p>
+          <p style={{ marginTop: "15px" }}>info@vacationweb.be</p>
           <p>info@vacationweb.nl</p>
         </footer>
       </main>
