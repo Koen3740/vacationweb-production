@@ -115,7 +115,7 @@ export default function HomePage() {
         <section
           style={{
             padding: "120px 10%",
-            background: "#f4fbff",
+            background: "white",
             textAlign: "center",
           }}
         >
@@ -130,118 +130,84 @@ export default function HomePage() {
             }}
           >
             Waarom VacationWeb?
-<section
-  style={{
-    padding: "120px 10%",
-    background: "#eef8fc",
-  }}
->
-  <div
-    style={{
-      maxWidth: "1200px",
-      margin: "0 auto",
-    }}
-  >
-    <p
-      style={{
-        color: "#0ea5e9",
-        fontSize: "0.8rem",
-        fontWeight: 700,
-        letterSpacing: "2px",
-        textTransform: "uppercase",
-        marginBottom: "20px",
-      }}
-    >
-      Waarom VacationWeb?
-    </p>
+          </div>
 
-    <h2
-      style={{
-        fontSize: "4rem",
-        lineHeight: 1.1,
-        fontWeight: 800,
-        color: "#0f172a",
-        marginBottom: "30px",
-      }}
-    >
-      Eén zoekopdracht.
-      <br />
-      Meerdere reispartners.
-    </h2>
+          <h2
+            style={{
+              fontSize: "3rem",
+              marginBottom: "70px",
+            }}
+          >
+            Eén zoekopdracht.
+            <br />
+            Meerdere reispartners.
+          </h2>
 
-    <p
-      style={{
-        maxWidth: "700px",
-        color: "#64748b",
-        fontSize: "1.15rem",
-        lineHeight: 1.8,
-        marginBottom: "60px",
-      }}
-    >
-      Traditioneel vergelijk je telkens maar één website tegelijk.
-      VacationWeb vergelijkt meerdere reispartners vanuit één
-      zoekopdracht en toont waar jouw budget de meeste waarde oplevert.
-    </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: "40px",
+              maxWidth: "1100px",
+              margin: "0 auto",
+            }}
+          >
+            <div
+              style={{
+                background: "#f8fafc",
+                padding: "40px",
+                borderRadius: "24px",
+                textAlign: "left",
+              }}
+            >
+              <h3 style={{ marginBottom: "25px" }}>
+                Traditionele reiswebsites
+              </h3>
 
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gap: "30px",
-      }}
-    >
-      <div
-        style={{
-          background: "white",
-          borderRadius: "24px",
-          padding: "40px",
-          boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
-        }}
-      >
-        <h3
+              <p>• Zoekopdracht invoeren</p>
+              <p>• Zoek bij reispartner A</p>
+              <p>• Herhaal bij reispartner B</p>
+              <p>• Herhaal bij reispartner C</p>
+              <p>• Vergelijk alles zelf</p>
+            </div>
+
+            <div
+              style={{
+                background: "#e0f2fe",
+                padding: "40px",
+                borderRadius: "24px",
+                textAlign: "left",
+              }}
+            >
+              <h3 style={{ marginBottom: "25px" }}>VacationWeb</h3>
+
+              <p>• Geef één keer je voorkeuren in</p>
+              <p>• Vergelijk meerdere reispartners tegelijk</p>
+              <p>• Ontdek waar jouw budget het meeste oplevert</p>
+              <p>• Alles in één overzicht</p>
+            </div>
+          </div>
+        </section>
+
+        {/* VOORBEELD */}
+
+        <section
           style={{
-            fontSize: "1.5rem",
-            marginBottom: "30px",
+            padding: "120px 10%",
+            background: "#f8fbfd",
+            textAlign: "center",
           }}
         >
-          Traditionele reiswebsites
-        </h3>
-
-        <div style={{ display: "grid", gap: "18px" }}>
-          <div>① Kies bestemming</div>
-          <div>② Vergelijk prijzen</div>
-          <div>③ Begin opnieuw</div>
-          <div>④ Vergelijk alles zelf</div>
-        </div>
-      </div>
-
-      <div
-        style={{
-          background: "#dff3ff",
-          borderRadius: "24px",
-          padding: "40px",
-          border: "1px solid #8fd6ff",
-        }}
-      >
-        <h3
-          style={{
-            fontSize: "1.5rem",
-            marginBottom: "30px",
-          }}
-        >
-          VacationWeb
-        </h3>
-
-        <div style={{ display: "grid", gap: "18px" }}>
-          <div>✓ Geef één keer je voorkeuren in</div>
-          <div>✓ Vergelijk meerdere reispartners tegelijk</div>
-          <div>✓ Ontdek waar jouw budget het meeste oplevert</div>
-          <div>✓ Alles in één overzicht</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+          <div
+            style={{
+              color: "#0ea5e9",
+              fontSize: "0.85rem",
+              fontWeight: 700,
+              letterSpacing: "2px",
+              textTransform: "uppercase",
+              marginBottom: "12px",
+            }}
+          >
             Voorbeeldscenario
           </div>
 
@@ -327,7 +293,7 @@ export default function HomePage() {
               fontWeight: 600,
             }}
           >
-            Budget €1.000 per persoon
+            Budget €1.000 per persoon • Flexibel tussen 10 juli en 20 augustus
           </p>
 
           <p
