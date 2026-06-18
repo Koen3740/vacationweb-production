@@ -133,9 +133,7 @@ export default function HomePage() {
           </div>
 
           <h2
-            style={{
-              fontSize: "3rem",<h2
-  style={{
+             style={{
     fontSize: "4.5rem",
     fontWeight: 800,
     lineHeight: 1.05,
