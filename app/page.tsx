@@ -6,6 +6,8 @@ export default function HomePage() {
       <Navbar />
 
       <main>
+        {/* HERO */}
+
         <section
           style={{
             minHeight: "100vh",
@@ -68,9 +70,8 @@ export default function HomePage() {
                 marginBottom: "2rem",
               }}
             >
-              Traditionele reiswebsites vertrekken vanuit een bestemming en
-              vertrekdatum. Wij vertrekken vanuit jouw budget, flexibiliteit en
-              voorkeuren.
+              Vergelijk vakanties van zorgvuldig geselecteerde reispartners
+              vanuit één centraal overzicht.
             </p>
 
             <div
@@ -107,6 +108,135 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        {/* WAAROM */}
+
+        <section
+          style={{
+            padding: "100px 10%",
+            background: "white",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: "3rem",
+              marginBottom: "60px",
+              textAlign: "center",
+            }}
+          >
+            Waarom zoeken via VacationWeb?
+          </h2>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: "40px",
+            }}
+          >
+            <div
+              style={{
+                padding: "40px",
+                borderRadius: "20px",
+                background: "#f8fafc",
+              }}
+            >
+              <h3 style={{ marginBottom: "20px" }}>
+                Traditionele reiswebsites
+              </h3>
+
+              <ul style={{ lineHeight: "2" }}>
+                <li>Zoekopdracht invoeren</li>
+                <li>Zoek bij reispartner A</li>
+                <li>Herhaal bij reispartner B</li>
+                <li>Herhaal bij reispartner C</li>
+                <li>Vergelijk alles zelf</li>
+              </ul>
+            </div>
+
+            <div
+              style={{
+                padding: "40px",
+                borderRadius: "20px",
+                background: "#e0f2fe",
+              }}
+            >
+              <h3 style={{ marginBottom: "20px" }}>VacationWeb</h3>
+
+              <ul style={{ lineHeight: "2" }}>
+                <li>Geef één keer je voorkeuren in</li>
+                <li>Wij vergelijken meerdere reispartners</li>
+                <li>Ontdek waar jouw budget het meeste oplevert</li>
+                <li>Alles in één overzicht</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* VOORBEELD */}
+
+        <section
+          style={{
+            padding: "100px 10%",
+            background: "#f8fafc",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: "3rem",
+              marginBottom: "50px",
+              textAlign: "center",
+            }}
+          >
+            Voorbeeldscenario
+          </h2>
+
+          <div
+            style={{
+              maxWidth: "900px",
+              margin: "0 auto",
+              background: "white",
+              padding: "50px",
+              borderRadius: "24px",
+            }}
+          >
+            <p>
+              <strong>Budget:</strong> €2.000
+            </p>
+
+            <p>
+              <strong>Periode:</strong> tussen 10 juli en 20 augustus
+            </p>
+
+            <p>
+              <strong>Voorkeuren:</strong> Strandvakantie • 4 sterren • All
+              Inclusive
+            </p>
+
+            <hr style={{ margin: "30px 0" }} />
+
+            <p>🇪🇸 Spanje → 7 dagen</p>
+            <p>🇬🇷 Griekenland → 8 dagen</p>
+            <p>🇧🇬 Bulgarije → 10 dagen</p>
+            <p>🇹🇷 Turkije → 11 dagen</p>
+          </div>
+        </section>
+
+        {/* FOOTER */}
+
+        <footer
+          style={{
+            padding: "60px 10%",
+            background: "#0f172a",
+            color: "white",
+            textAlign: "center",
+          }}
+        >
+          <h3 style={{ marginBottom: "20px" }}>VacationWeb</h3>
+
+          <p>info@vacationweb.be</p>
+          <p>info@vacationweb.nl</p>
+        </footer>
       </main>
     </>
   );
