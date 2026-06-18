@@ -5,35 +5,108 @@ export default function HomePage() {
     <>
       <Navbar />
 
-      <main
-        style={{
-          minHeight: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          textAlign: "center",
-          padding: "2rem",
-        }}
-      >
-        <h1
+      <main>
+        <section
           style={{
-            fontSize: "4rem",
-            fontWeight: "bold",
-            marginBottom: "1rem",
+            minHeight: "100vh",
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            position: "relative",
+            display: "flex",
+            alignItems: "center",
           }}
         >
-          VacationWeb
-        </h1>
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background:
+                "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35))",
+            }}
+          />
 
-        <p
-          style={{
-            fontSize: "1.5rem",
-            maxWidth: "700px",
-          }}
-        >
-          Meer vakantie voor jouw budget
-        </p>
+          <div
+            style={{
+              position: "relative",
+              zIndex: 2,
+              maxWidth: "700px",
+              marginLeft: "10%",
+              color: "white",
+            }}
+          >
+            <div
+              style={{
+                display: "inline-block",
+                padding: "0.6rem 1rem",
+                borderRadius: "999px",
+                border: "1px solid rgba(255,255,255,0.5)",
+                marginBottom: "1.5rem",
+              }}
+            >
+              ☀️ Een nieuwe manier om vakantie te zoeken
+            </div>
+
+            <h1
+              style={{
+                fontSize: "5rem",
+                lineHeight: 1.05,
+                fontWeight: 800,
+                marginBottom: "1.5rem",
+              }}
+            >
+              Meer vakantie
+              <br />
+              voor jouw budget
+            </h1>
+
+            <p
+              style={{
+                fontSize: "1.3rem",
+                lineHeight: 1.7,
+                marginBottom: "2rem",
+              }}
+            >
+              Traditionele reiswebsites vertrekken vanuit een bestemming en
+              vertrekdatum. Wij vertrekken vanuit jouw budget, flexibiliteit en
+              voorkeuren.
+            </p>
+
+            <div
+              style={{
+                display: "flex",
+                gap: "1rem",
+                flexWrap: "wrap",
+              }}
+            >
+              <button
+                style={{
+                  padding: "1rem 1.8rem",
+                  borderRadius: "999px",
+                  border: "none",
+                  cursor: "pointer",
+                  fontWeight: 600,
+                }}
+              >
+                Blijf op de hoogte
+              </button>
+
+              <button
+                style={{
+                  padding: "1rem 1.8rem",
+                  borderRadius: "999px",
+                  background: "white",
+                  border: "none",
+                  cursor: "pointer",
+                  fontWeight: 600,
+                }}
+              >
+                Ontdek het concept
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
