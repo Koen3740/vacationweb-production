@@ -17,7 +17,7 @@ export default function Navbar() {
         src="/logo.png"
         alt="VacationWeb"
         style={{
-          height: "60px",
+          height: "110px",
           width: "auto",
         }}
       />
