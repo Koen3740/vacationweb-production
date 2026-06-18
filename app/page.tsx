@@ -134,15 +134,32 @@ export default function HomePage() {
 
           <h2
             style={{
-              fontSize: "3rem",
-              marginBottom: "70px",
-            }}
-          >
+              fontSize: "3rem",<h2
+  style={{
+    fontSize: "4.5rem",
+    fontWeight: 800,
+    lineHeight: 1.05,
+    color: "#0f172a",
+    marginBottom: "30px",
+  }}
+>
             Eén zoekopdracht.
             <br />
             Meerdere reispartners.
           </h2>
-
+<p
+  style={{
+    maxWidth: "720px",
+    margin: "0 auto 60px auto",
+    color: "#64748b",
+    fontSize: "1.1rem",
+    lineHeight: "1.8",
+  }}
+>
+  Traditioneel vergelijk je telkens maar één website tegelijk.
+  VacationWeb vergelijkt meerdere reispartners vanuit één zoekopdracht
+  en toont waar jouw budget de meeste waarde oplevert.
+</p>
           <div
             style={{
               display: "grid",
