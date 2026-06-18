@@ -115,7 +115,7 @@ export default function HomePage() {
         <section
           style={{
             padding: "120px 10%",
-            background: "white",
+            background: "#f4fbff",
             textAlign: "center",
           }}
         >
@@ -133,15 +133,18 @@ export default function HomePage() {
           </div>
 
           <h2
-            style={{
-              fontSize: "3rem",
-              marginBottom: "70px",
-            }}
-          >
-            Eén zoekopdracht.
-            <br />
-            Meerdere reispartners.
-          </h2>
+  style={{
+    fontSize: "4rem",
+    fontWeight: 800,
+    lineHeight: 1.1,
+    marginBottom: "20px",
+    color: "#0f172a",
+  }}
+>
+  Waarom zoeken
+  <br />
+  via VacationWeb?
+</h2>
 
           <div
             style={{
@@ -155,11 +158,24 @@ export default function HomePage() {
             <div
               style={{
                 background: "#f8fafc",
-                padding: "40px",
-                borderRadius: "24px",
+                padding: "30px",
+                borderRadius: "20px",
                 textAlign: "left",
               }}
             >
+              <p
+  style={{
+    maxWidth: "700px",
+    margin: "0 auto 60px auto",
+    color: "#64748b",
+    fontSize: "1.1rem",
+    lineHeight: "1.8",
+  }}
+>
+  Traditioneel vergelijk je telkens maar één plek tegelijk.
+  VacationWeb vergelijkt meerdere reispartners en toont waar jouw
+  budget het meeste vakantiewaarde oplevert.
+</p>
               <h3 style={{ marginBottom: "25px" }}>
                 Traditionele reiswebsites
               </h3>
@@ -168,7 +184,7 @@ export default function HomePage() {
               <p>• Zoek bij reispartner A</p>
               <p>• Herhaal bij reispartner B</p>
               <p>• Herhaal bij reispartner C</p>
-              <p>• Vergelijk alles zelf</p>
+              <p>• Vergelijk zelf alle resultaten</p>
             </div>
 
             <div
@@ -293,7 +309,7 @@ export default function HomePage() {
               fontWeight: 600,
             }}
           >
-            Budget €1.000 per persoon • Flexibel tussen 10 juli en 20 augustus
+            Budget €1.000 per persoon
           </p>
 
           <p
