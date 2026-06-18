@@ -12,7 +12,7 @@ export default function HomePage() {
           style={{
             minHeight: "100vh",
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2200&q=80')",
+              "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             position: "relative",
@@ -24,7 +24,8 @@ export default function HomePage() {
             style={{
               position: "absolute",
               inset: 0,
-              background: "rgba(0,0,0,0.45)",
+              background:
+                "linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40))",
             }}
           />
 
@@ -40,11 +41,10 @@ export default function HomePage() {
             <div
               style={{
                 display: "inline-block",
-                padding: "0.75rem 1.2rem",
+                padding: "0.6rem 1rem",
                 borderRadius: "999px",
-                border: "1px solid rgba(255,255,255,0.4)",
-                marginBottom: "2rem",
-                backdropFilter: "blur(10px)",
+                border: "1px solid rgba(255,255,255,0.5)",
+                marginBottom: "1.5rem",
               }}
             >
               ☀️ Een nieuwe manier om vakantie te zoeken
@@ -52,11 +52,10 @@ export default function HomePage() {
 
             <h1
               style={{
-                fontSize: "5.8rem",
+                fontSize: "5rem",
+                lineHeight: 1.05,
                 fontWeight: 800,
-                lineHeight: 1,
-                letterSpacing: "-3px",
-                marginBottom: "2rem",
+                marginBottom: "1.5rem",
               }}
             >
               Meer vakantie
@@ -66,10 +65,10 @@ export default function HomePage() {
 
             <p
               style={{
-                fontSize: "1.35rem",
-                lineHeight: 1.8,
-                maxWidth: "650px",
+                fontSize: "1.3rem",
+                lineHeight: 1.7,
                 marginBottom: "2rem",
+                maxWidth: "650px",
               }}
             >
               Vergelijk vakanties van zorgvuldig geselecteerde reispartners
@@ -80,6 +79,7 @@ export default function HomePage() {
               style={{
                 display: "flex",
                 gap: "1rem",
+                flexWrap: "wrap",
               }}
             >
               <button
@@ -87,10 +87,8 @@ export default function HomePage() {
                   padding: "1rem 1.8rem",
                   borderRadius: "999px",
                   border: "none",
-                  background: "#0ea5e9",
-                  color: "white",
-                  fontWeight: 700,
                   cursor: "pointer",
+                  fontWeight: 600,
                 }}
               >
                 Blijf op de hoogte
@@ -100,10 +98,10 @@ export default function HomePage() {
                 style={{
                   padding: "1rem 1.8rem",
                   borderRadius: "999px",
-                  border: "none",
                   background: "white",
-                  fontWeight: 700,
+                  border: "none",
                   cursor: "pointer",
+                  fontWeight: 600,
                 }}
               >
                 Ontdek het concept
@@ -116,110 +114,93 @@ export default function HomePage() {
 
         <section
           style={{
-            background: "#eef8fc",
             padding: "120px 10%",
+            background: "#f4fbff",
+            textAlign: "center",
           }}
         >
           <div
             style={{
-              textAlign: "center",
-              marginBottom: "70px",
+              color: "#0ea5e9",
+              fontSize: "0.85rem",
+              fontWeight: 700,
+              letterSpacing: "2px",
+              textTransform: "uppercase",
+              marginBottom: "12px",
             }}
           >
-            <div
-              style={{
-                color: "#0ea5e9",
-                fontSize: "0.85rem",
-                fontWeight: 700,
-                letterSpacing: "2px",
-                textTransform: "uppercase",
-                marginBottom: "20px",
-              }}
-            >
-              Waarom VacationWeb?
-            </div>
-
-            <h2
-              style={{
-                fontSize: "5rem",
-                lineHeight: 1,
-                fontWeight: 800,
-                color: "#0f172a",
-                marginBottom: "30px",
-              }}
-            >
-              Eén zoekopdracht.
-              <br />
-              Meerdere reispartners.
-            </h2>
-
-            <p
-              style={{
-                maxWidth: "850px",
-                margin: "0 auto",
-                color: "#64748b",
-                fontSize: "1.2rem",
-                lineHeight: 1.8,
-              }}
-            >
-              Traditioneel vergelijk je telkens maar één website tegelijk.
-              VacationWeb vergelijkt meerdere reispartners vanuit één
-              zoekopdracht en toont waar jouw budget de meeste waarde oplevert.
-            </p>
+            Waarom VacationWeb?
           </div>
+
+          <h2
+  style={{
+    fontSize: "4rem",
+    fontWeight: 800,
+    lineHeight: 1.1,
+    marginBottom: "20px",
+    color: "#0f172a",
+  }}
+>
+  Waarom zoeken
+  <br />
+  via VacationWeb?
+</h2>
 
           <div
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
-              gap: "30px",
+              gap: "40px",
               maxWidth: "1100px",
               margin: "0 auto",
             }}
           >
             <div
               style={{
-                background: "white",
-                borderRadius: "24px",
-                padding: "40px",
+                background: "#f8fafc",
+                padding: "30px",
+                borderRadius: "20px",
+                textAlign: "left",
               }}
             >
-              <h3
-                style={{
-                  fontSize: "1.7rem",
-                  marginBottom: "30px",
-                }}
-              >
+              <p
+  style={{
+    maxWidth: "700px",
+    margin: "0 auto 60px auto",
+    color: "#64748b",
+    fontSize: "1.1rem",
+    lineHeight: "1.8",
+  }}
+>
+  Traditioneel vergelijk je telkens maar één plek tegelijk.
+  VacationWeb vergelijkt meerdere reispartners en toont waar jouw
+  budget het meeste vakantiewaarde oplevert.
+</p>
+              <h3 style={{ marginBottom: "25px" }}>
                 Traditionele reiswebsites
               </h3>
 
-              <p>① Kies bestemming</p>
-              <p>② Vergelijk prijzen</p>
-              <p>③ Begin opnieuw</p>
-              <p>④ Vergelijk alles zelf</p>
+              <p>• Zoekopdracht invoeren</p>
+              <p>• Zoek bij reispartner A</p>
+              <p>• Herhaal bij reispartner B</p>
+              <p>• Herhaal bij reispartner C</p>
+              <p>• Vergelijk zelf alle resultaten</p>
             </div>
 
             <div
               style={{
-                background: "#dff3ff",
-                borderRadius: "24px",
+                background: "#e0f2fe",
                 padding: "40px",
-                border: "1px solid #8fd6ff",
+                borderRadius: "24px",
+                textAlign: "left",
               }}
             >
-              <h3
-                style={{
-                  fontSize: "1.7rem",
-                  marginBottom: "30px",
-                }}
-              >
-                VacationWeb
-              </h3>
+              <h3 style={{ marginBottom: "25px" }}>VacationWeb</h3>
 
-              <p>✓ Geef één keer je voorkeuren in</p>
-              <p>✓ Vergelijk meerdere reispartners tegelijk</p>
-              <p>✓ Ontdek waar jouw budget het meeste oplevert</p>
-              <p>✓ Alles in één overzicht</p>
+              <p>• Geef één keer je voorkeuren in</p>
+              <p>• Vergelijk meerdere reispartners tegelijk</p>
+              <p>• Ontdek waar jouw budget het meeste oplevert</p>
+              <p>• Alles in één overzicht</p>
             </div>
           </div>
         </section>
@@ -228,18 +209,19 @@ export default function HomePage() {
 
         <section
           style={{
-            background: "#eef8fc",
-            padding: "100px 10%",
+            padding: "120px 10%",
+            background: "#f8fbfd",
             textAlign: "center",
           }}
         >
           <div
             style={{
               color: "#0ea5e9",
-              textTransform: "uppercase",
-              letterSpacing: "2px",
+              fontSize: "0.85rem",
               fontWeight: 700,
-              marginBottom: "15px",
+              letterSpacing: "2px",
+              textTransform: "uppercase",
+              marginBottom: "12px",
             }}
           >
             Voorbeeldscenario
@@ -247,9 +229,7 @@ export default function HomePage() {
 
           <h2
             style={{
-              fontSize: "3.8rem",
-              fontWeight: 800,
-              color: "#0f172a",
+              fontSize: "3rem",
               marginBottom: "60px",
             }}
           >
@@ -266,19 +246,16 @@ export default function HomePage() {
           >
             <div
               style={{
-                width: "280px",
+                width: "300px",
                 background: "white",
                 borderRadius: "24px",
                 overflow: "hidden",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
               }}
             >
               <img
                 src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
-                style={{
-                  width: "100%",
-                  height: "220px",
-                  objectFit: "cover",
-                }}
+                style={{ width: "100%", height: "220px", objectFit: "cover" }}
               />
               <div style={{ padding: "20px" }}>
                 <strong>Mallorca</strong>
@@ -288,19 +265,16 @@ export default function HomePage() {
 
             <div
               style={{
-                width: "280px",
+                width: "300px",
                 background: "white",
                 borderRadius: "24px",
                 overflow: "hidden",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
               }}
             >
               <img
                 src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff"
-                style={{
-                  width: "100%",
-                  height: "220px",
-                  objectFit: "cover",
-                }}
+                style={{ width: "100%", height: "220px", objectFit: "cover" }}
               />
               <div style={{ padding: "20px" }}>
                 <strong>Griekenland</strong>
@@ -310,20 +284,17 @@ export default function HomePage() {
 
             <div
               style={{
-                width: "280px",
+                width: "300px",
                 background: "white",
                 borderRadius: "24px",
                 overflow: "hidden",
                 border: "3px solid #0ea5e9",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
               }}
             >
               <img
                 src="https://images.unsplash.com/photo-1519046904884-53103b34b206"
-                style={{
-                  width: "100%",
-                  height: "220px",
-                  objectFit: "cover",
-                }}
+                style={{ width: "100%", height: "220px", objectFit: "cover" }}
               />
               <div style={{ padding: "20px" }}>
                 <strong>Turkije</strong>
@@ -334,9 +305,8 @@ export default function HomePage() {
 
           <p
             style={{
-              marginTop: "30px",
-              fontWeight: 700,
-              fontSize: "1.1rem",
+              marginTop: "25px",
+              fontWeight: 600,
             }}
           >
             Budget €1.000 per persoon
@@ -344,8 +314,9 @@ export default function HomePage() {
 
           <p
             style={{
-              marginTop: "10px",
+              marginTop: "15px",
               color: "#64748b",
+              fontSize: "0.9rem",
             }}
           >
             Illustratief voorbeeld. Werkelijke prijzen, beschikbaarheid en
@@ -353,66 +324,20 @@ export default function HomePage() {
           </p>
         </section>
 
-        {/* WAAROM DIT WERKT */}
-
-        <section
-          style={{
-            background: "#eef8fc",
-            padding: "100px 10%",
-            textAlign: "center",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "3rem",
-              fontWeight: 800,
-              marginBottom: "50px",
-            }}
-          >
-            Waarom dit werkt
-          </h2>
-
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              gap: "20px",
-              flexWrap: "wrap",
-            }}
-          >
-            <div style={card}>Meer mogelijkheden ontdekken</div>
-            <div style={card}>Minder tijd verliezen</div>
-            <div style={card}>Slimmer vergelijken</div>
-            <div style={card}>Meer vakantie beleven</div>
-          </div>
-        </section>
-
-        {/* FOOTER */}
-
         <footer
           style={{
-            background: "#081530",
+            background: "#0f172a",
             color: "white",
-            padding: "70px",
+            padding: "60px",
             textAlign: "center",
           }}
         >
           <h3>VacationWeb</h3>
 
-          <p style={{ marginTop: "20px" }}>
-            info@vacationweb.be
-            <br />
-            info@vacationweb.nl
-          </p>
+          <p style={{ marginTop: "15px" }}>info@vacationweb.be</p>
+          <p>info@vacationweb.nl</p>
         </footer>
       </main>
     </>
   );
 }
-
-const card = {
-  width: "240px",
-  background: "white",
-  padding: "35px",
-  borderRadius: "20px",
-} as const;
